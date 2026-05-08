@@ -10,6 +10,7 @@ const body = document.querySelector("body");
 const heading = document.querySelector("#main-heading");
 const description = document.querySelector("#description");
 const toggleBtn = document.querySelector("#toggle");
+const image = document.querySelector("#image");
 
 // Change HTML & CSS properties of these elements
 heading.textContent = "Light Mode & Dark Mode Website";
@@ -29,9 +30,13 @@ function toggleMode() {
       heading.style.color = "lightpink";
       description.style.color = "white";
       description.textContent = "Welcome to the dark side!";
+      description.style.fontFamily = "Charcoal,Impact,sans-serif";
       toggleBtn.textContent = "Switch to Light";
       toggleBtn.style.color = "blue";
       toggleBtn.style.background = "hotpink";
+      toggleBtn.style.textDecoration = "underline";
+      image.src = "dark.jpeg"
+      image.style.padding = "40px 10px 30px 30px";
 
    }
    else {
@@ -43,6 +48,8 @@ function toggleMode() {
       toggleBtn.textContent = "Switch to dark";
       toggleBtn.style.color = "rgb(251, 102, 102)";
       toggleBtn.style.background = "lightyellow";
+      image.src = "light.jpg";
+      
 
    }
 
