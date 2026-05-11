@@ -30,7 +30,7 @@ function toggleMode() {
       heading.style.color = "lightpink";
       description.style.color = "white";
       description.textContent = "Welcome to the dark side!";
-      description.style.fontFamily = "Charcoal,Impact,sans-serif";
+      description.style.fontFamily = "Impact, sans-serif";
       toggleBtn.textContent = "Switch to Light";
       toggleBtn.style.color = "blue";
       toggleBtn.style.background = "hotpink";
@@ -56,3 +56,34 @@ function toggleMode() {
 }
 // Attach the function to the button
 toggleBtn.addEventListener("click", toggleMode);  
+
+//REVIEW
+// 1. Select the new button from the page
+const hackerBtn = document.querySelector("#hacker");
+// 2. Attatch click event listener to the button
+hackerBtn.addEventListener("click", setHacker);
+// 3. Define the function that the button triggers
+function setHacker() {
+   body.style.background = "rgb(0,0,0)";
+   description.style.color = "rgb(76, 227, 0)";
+   body.style.fontFamily = "monospace";
+   description.textContent = "YOU HAVE BEEN HACKED!"
+}
+
+const germanBtn = document.querySelector("#german-sheperd");
+germanBtn.addEventListener("click", setGerman);
+function setGerman() {
+   body.style.background = "rgb(247, 184, 231)";
+   description.style.color = "rgb(106, 33, 103)";
+   body.style.fontFamily = "georgia";
+   description.textContent = "This is a German Sheperd!";
+   image.src = "Germanshep.webp";
+   image.style.padding = "50px 10px 30px 30px";
+   germanBtn.style.color = "rgb(53, 188, 255)";
+   germanBtn.style.background = "rgb(115, 56, 174)";
+   germanBtn.style.border = "solid #000000";
+
+}
+
+
+
