@@ -28,6 +28,7 @@ function toggleMode() {
       console.log("apply dark mode styles")
       body.style.background = "black";
       heading.style.color = "lightpink";
+      heading.textContent = "Light Mode & Dark Mode Website!"
       description.style.color = "white";
       description.textContent = "Welcome to the dark side!";
       description.style.fontFamily = "Impact, sans-serif";
@@ -43,6 +44,7 @@ function toggleMode() {
       console.log("apply light mode styles")
       body.style.background = "white";
       heading.style.color = "purple";
+      heading.textContent = "Light Mode & Dark Mode Website!"
       description.style.color ="black";
       description.textContent ="Welcome to light mode!";
       toggleBtn.textContent = "Switch to dark";
@@ -68,22 +70,42 @@ function setHacker() {
    description.style.color = "rgb(76, 227, 0)";
    body.style.fontFamily = "monospace";
    description.textContent = "YOU HAVE BEEN HACKED!"
+   heading.textContent ="UH OH!";
+   heading.style.background = "url(neonlights.jpg)";
+   heading.style.borderRadius = "5px";
+   heading.style.color = "rgb(76,227,0)"
+   image.src = "hacker.webp";
+   
 }
 
-const germanBtn = document.querySelector("#german-sheperd");
+const germanBtn = document.querySelector("#german-shepherd");
 germanBtn.addEventListener("click", setGerman);
 function setGerman() {
    body.style.background = "rgb(247, 184, 231)";
    description.style.color = "rgb(106, 33, 103)";
    body.style.fontFamily = "georgia";
-   description.textContent = "This is a German Sheperd!";
+   description.textContent = "This is a German Shepherd!";
    image.src = "Germanshep.webp";
    image.style.padding = "50px 10px 30px 30px";
    germanBtn.style.color = "rgb(53, 188, 255)";
    germanBtn.style.background = "rgb(115, 56, 174)";
    germanBtn.style.border = "solid #000000";
+   heading.textContent = "Different dogs!"
+   heading.style.borderRadius = "5px";
+   heading.style.color = "purple";
 
 }
+
+const poodleBtn = document.querySelector("#poodle");
+poodleBtn.addEventListener("click", setPoodle);
+function setPoodle() {
+   body.style.background = "rgb(206, 172, 254)";
+   description.style.color = "rgb(80, 79, 146)";
+   body.style.fontFamily = "georgia";
+   description.textContent = "This is a Poodle!";
+   image.src = "poodle.jpg";
+}
+
 
 
 
